@@ -1,0 +1,7 @@
+// open a command prompt at the top directory
+
+{
+	"working_dir": "$folder",
+	"shell_cmd": "x-terminal-emulator",
+	"selector": "-",
+}

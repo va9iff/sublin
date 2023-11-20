@@ -1,0 +1,7 @@
+download FileIcons package.
+copy ./FileIcons folder 
+to packages folder (in).
+
+
+Unlike AFileIcon, it claims that it has no runtime and doesn't requires restart.
+To add its icons to a theme, simply copy theme file to FileIcons/theme folder.

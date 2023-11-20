@@ -1,0 +1,37 @@
+[
+
+	// open cmd at top folder
+	{
+		"keys": ["alt+k"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/sublin/utils/terminal/Open terminal - top.sublime-build",
+			"variant": "",
+			"choice_build_system": false,
+		}
+	},
+
+	// open cmd at file folder
+	{
+		"keys": ["shift+alt+k"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/sublin/utils/terminal/Open terminal - file.sublime-build",
+			"variant": "",
+			"choice_build_system": false,
+		}
+	},
+
+	// run the file
+	{
+		"keys": ["alt+b"],
+		"command": "build",
+		"args": {
+			"select": false,
+			"build_system": "Packages/sublin/utils/Run.sublime-build",
+			"choice_build_system": false,
+		}
+	},
+]

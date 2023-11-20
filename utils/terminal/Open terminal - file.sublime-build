@@ -1,0 +1,7 @@
+// open a command prompt at the file's directory
+
+{
+	"working_dir": "$file_path",
+	"shell_cmd": "x-terminal-emulator",
+	"selector": "-",
+}

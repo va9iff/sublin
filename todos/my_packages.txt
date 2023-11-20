@@ -1,0 +1,18 @@
+Crucial:
+	Package Control
+	Terminus
+
+Optional:
+	FileIcons
+	FileManager
+	PackageDev
+
+Maybe:
+	Buildview
+
+Fancy:
+	Guna
+
+Nope:
+	Emmet
+	Resolve-Javascript-Modules
