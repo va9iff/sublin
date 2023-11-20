@@ -1,2 +1,5 @@
+Install Cascadia Code font zip
+extract to /usr/share/fonts/
+
 I use Cascadia-Code as the main coding font 
 so I need to install it and set it for sublime text
