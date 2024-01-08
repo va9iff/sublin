@@ -28,5 +28,8 @@
 		"args": {
 			"dir": "$folder"
 		}
-	}
+	},
+
+	// my commands
+	{ "keys": ["ctrl+alt+n"], "command": "diary_today"}
 ]
