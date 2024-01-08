@@ -1,0 +1,100 @@
+{
+    "extends": "Adaptive.sublime-theme",
+    "rules": [
+        {
+            "class": "sidebar_container",
+            "content_margin": [5, 0]
+        },
+    	{
+    		"class": "sidebar_tree",
+    		"row_padding": [16, 4, 4, 4],
+    	},
+
+    	{
+    		"class": "sidebar_heading",
+    		"font.size": 15,
+    		"font.bold": false,
+            "case": "title",
+    	},
+    	{
+    		"class": "puck_control",
+    		"content_margin": [2, 0],// added puck or scrollbar size
+            "layer0.tint": "color(var(--background) s(60%) l(60%))",
+    	},
+
+        // =====================================================================
+        // Sidebar Label
+    	{
+    		"class": "sidebar_label",
+            "opacity": 0.6,
+    	},
+        {
+            "class": "sidebar_label",
+            "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+            "opacity": 1,
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "tree_row", "attributes": ["selected"] } ],
+    		"color":"var(--foreground)", //selected tree row text color
+            "opacity": 1,
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "tree_row", "attributes": ["hover"] } ],
+            // "color": "color(var(--foreground) s(100%) l(60%))",
+            "opacity": 1,
+        },
+
+        // =====================================================================
+        // Sidebar Heading
+        {
+
+            "class": "icon_folder",
+            "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+            "layer0.tint": "color(var(--background) s(30%) l(50%))",
+            "layer0.opacity": 1,            
+        },	
+    	{
+    		"class": "tree_row",
+    		"layer0.texture": "sublin/assets/tree-highlight.png",
+            "layer0.tint": "color(var(--background) a(0))", // "#47526600", 
+    		"layer0.inner_margin": [8, 4],
+    		"layer0.opacity": 1,
+    		"layer1.texture": "sublin/assets/tree-highlight-border.png",
+            "layer1.tint": "color(var(--background) s(18%) l(/*34*/50%) a(0.25))", // #47526640
+    		"layer1.inner_margin": [8, 4],
+    		"layer1.opacity": 0
+    	},
+    	{
+    		"class": "tree_row",
+    		"attributes": ["selectable", "hover"],
+    		"layer0.tint": "color(var(--background) s(18%) l(34%) a(0.25))",// "#47526640"
+    		"layer1.opacity": 1
+    	},
+    	{
+    		"class": "tree_row",
+    		"attributes": ["selectable", "selected" ],
+    		"layer0.tint": "color(var(--background) s(25%) l(62%) a(0.3))"
+    	},
+    	{
+    		"class": "tree_row",
+    		"attributes": ["selectable", "selected", "hover" ],
+            "layer0.tint": "color(var(--background) s(18%) l(34%) a(0.25))",// "#47526640"
+    	},
+
+        // =====================================================================
+        // Hide Sidebar Headings
+
+        {
+          "class": "sidebar_container",
+          "settings": ["hide_header"],
+          "content_margin": [0, -30, 0, 0] // <= -10 is the top margin
+        },
+        {
+          "class": "sidebar_heading",
+          "settings": ["hide_header"],
+          "color": "transparent", // <= the last 0 is the transparency
+        },
+    ]
+}
