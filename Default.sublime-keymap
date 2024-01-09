@@ -31,5 +31,6 @@
 	},
 
 	// my commands
-	{ "keys": ["ctrl+alt+n"], "command": "diary_today"}
+	{ "keys": ["ctrl+alt+n"], "command": "diary_today"},
+	{ "keys": ["alt+a"], "command": "note"}
 ]
