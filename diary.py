@@ -14,7 +14,7 @@ class DiaryTodayCommand(sublime_plugin.TextCommand):
         folder_name = "diary"
         file_name = "{month} {day}.txt".format(month=month, day=day)
 
-        folder = os.path.join(folder_place, folder_name, year)
+        folder = os.path.join(folder_place, folder_name, year, month)
         new_file_path = os.path.join(folder, file_name)
         os.makedirs(folder, exist_ok=True) # make folders if it doesn't exist
 
