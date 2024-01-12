@@ -11,10 +11,10 @@ pages_month_folder="$diary/$year/$month"
 todays_page_path="$diary/$year/$month/$month $day.txt"
 
 # folder for every day
-dumps=$diary/$year/dumps
-todays_dump="$dumps/$month $day"
+zaps=$diary/$year/zaps
+todays_zap="$zaps/$month $day"
 
 mkdir -p "$pages_month_folder"
-mkdir -p "$todays_dump"
+mkdir -p "$todays_zap"
 
-subl "$todays_page_path" "$todays_dump" "$diary"
+subl "$todays_page_path" "$todays_zap" "$diary" "$notes"
