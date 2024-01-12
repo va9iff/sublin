@@ -1,5 +1,6 @@
 diary=~/diary
 dumps=$diary/dumps
+notes=$diary/notes
 
 year=$(date +%Y)
 month=$(date +%B)
@@ -16,4 +17,4 @@ todays_dump="$dumps/$year/$month/$month $day"
 mkdir -p "$pages_month_folder"
 mkdir -p "$todays_dump"
 
-subl "$todays_page_path" "$todays_dump" "$diary" "~/notes"
+subl "$todays_page_path" "$todays_dump" "$diary" "$notes"
