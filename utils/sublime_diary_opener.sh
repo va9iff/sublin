@@ -1,20 +1,23 @@
-diary=~/diary
-notes=$diary/notes
+top=~/diary
 
 year=$(date +%Y)
 month=$(date +%B)
-month_short=$(date +%b)
 day=$(date +%d)
 
-# file for every day
-pages_month_folder="$diary/$year/$month"
-todays_page_path="$diary/$year/$month/$month $day.txt"
+notes=$top/notes
 
-# folder for every day
-zaps=$diary/$year/zaps
+year_folder="$top/$year"
+diary="$year_folder/diary" # files for every day
+today_page_path="$diary/$month $day.txt"
+
+zaps=$year_folder/zaps # folder for every day
 todays_zap="$zaps/$month $day"
 
-mkdir -p "$pages_month_folder"
+mkdir -p "$top"
+mkdir -p "$year_folder"
+mkdir -p "$diary"
+mkdir -p "$zaps"
 mkdir -p "$todays_zap"
+mkdir -p "$notes"
 
-subl "$todays_page_path" "$todays_zap" "$diary" "$notes"
+subl "$today_page_path" "$todays_zap" "$year_folder" "$notes"
