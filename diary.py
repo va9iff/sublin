@@ -11,10 +11,10 @@ class DiaryTodayCommand(sublime_plugin.TextCommand):
         day = datetime.now().strftime("%d")
 
         folder_place = os.path.expanduser("~")
-        folder_name = "diary"
+        top = "diary"
         file_name = "{month} {day}.txt".format(month=month, day=day)
 
-        folder = os.path.join(folder_place, folder_name, year, month)
+        folder = os.path.join(folder_place, top, year, "diary")
         new_file_path = os.path.join(folder, file_name)
         os.makedirs(folder, exist_ok=True) # make folders if it doesn't exist
 
