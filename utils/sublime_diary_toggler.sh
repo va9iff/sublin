@@ -1,6 +1,8 @@
 #!/bin/bash
 
 app_title="~/diary"
+launch_app="~/.config/sublime-text/Packages/sublin/utils/sublime_diary_opener.sh"
+
 window_id=$(wmctrl -l | grep "$app_title" | cut -d ' ' -f 1)
 if wmctrl -l | grep "$app_title" > /dev/null; then
     window_id=$(wmctrl -l | grep "$app_title" | cut -d ' ' -f 1)
@@ -19,8 +21,9 @@ if wmctrl -l | grep "$app_title" > /dev/null; then
         echo "not in focus - focusing"
 	    wmctrl -i -a "$window_id"
 	fi
+
 else
     echo "no open window found - launching"
-    ~/.config/sublime-text/Packages/sublin/utils/sublime_diary_opener.sh
-    # /home/va9iff/v9/utils/mycom # to undecorate
+    eval $launch_app
+    # /home/va9iff/v9/utils/mycom # to undecorate (BUT THE ACTIVE WINDOW)
 fi
