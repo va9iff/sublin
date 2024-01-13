@@ -40,33 +40,6 @@ if wmctrl -l | grep "$app_title" > /dev/null; then
 else
     echo "Application is not open. Opening the application..."
 
-    # ============
-    # diary opener
-    # ============
-    top=~/diary
-
-    year=$(date +%Y)
-    month=$(date +%B)
-    day=$(date +%d)
-
-    notes=$top/notes
-
-    year_folder="$top/$year"
-    diary="$year_folder/diary" # files for every day
-    today_page_path="$diary/$month $day.txt"
-
-    zaps=$year_folder/zaps # folder for every day
-    todays_zap="$zaps/$month $day"
-
-    mkdir -p "$top"
-    mkdir -p "$year_folder"
-    mkdir -p "$diary"
-    mkdir -p "$zaps"
-    mkdir -p "$todays_zap"
-    mkdir -p "$notes"
-
-    subl "$today_page_path" "$todays_zap" "$year_folder" "$notes"
-    # =============
-    # /diary opener
-    # =============
+    ~/.config/sublime-text/Packages/sublin/utils/sublime_diary_opener.sh
+    # /home/va9iff/v9/utils/mycom # to undecorate
 fi
