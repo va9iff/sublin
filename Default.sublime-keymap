@@ -23,7 +23,7 @@
 	},
 	{
 		// open top folder
-		"keys": ["ctrl+shift+e"],
+		"keys": ["ctrl+alt+e"],
 		"command": "open_dir",
 		"args": {
 			"dir": "$folder"
@@ -31,6 +31,5 @@
 	},
 
 	// my commands
-	{ "keys": ["ctrl+alt+n"], "command": "diary_today"},
 	{ "keys": ["alt+a"], "command": "note"}
 ]

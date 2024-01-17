@@ -1,7 +1,7 @@
 #!/bin/bash
 
-app_title="~/diary"
-launch_app="~/.config/sublime-text/Packages/sublin/utils/sublime_diary_opener.sh"
+app_title="(notes) - Sublime Text"
+launch_app="~/.config/sublime-text/Packages/sublin/utils/sublime_notes_opener.sh"
 
 window_id=$(wmctrl -l | grep "$app_title" | cut -d ' ' -f 1)
 if wmctrl -l | grep "$app_title" > /dev/null; then
