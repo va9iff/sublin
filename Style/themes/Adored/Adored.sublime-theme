@@ -47,7 +47,7 @@
         },
 
         // =====================================================================
-        // Sidebar Heading
+        // Sidebar tree
         {
 
             "class": "icon_folder",
@@ -84,7 +84,7 @@
     	},
 
         // =====================================================================
-        // Hide Sidebar Headings
+        // Hide Sidebar Headings (if { "hide_header": True })
 
         {
           "class": "sidebar_container",
