@@ -2,6 +2,15 @@
 	{
 		"keys": ["ctrl+e"], "command": "toggle_side_bar"  
 	},
+	{
+		"keys": ["ctrl+shift+e"],
+		"command": "toggle_show_open_files",
+	},
+	{
+		"keys": ["ctrl+alt+r"],
+		"command": "reveal_in_side_bar",
+	},
+
 
 	{ "keys": ["ctrl+shift+c"], "command": "cancel_build" },
 	{ "keys": ["ctrl+w"], "command": "close_file" }, //so ctrl+w won't close window
