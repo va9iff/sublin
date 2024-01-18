@@ -1,0 +1,17 @@
+{
+    "reveal_in_sidebar": true, // reveal created/renamed/duplicated etc files
+    "show_edit_to_the_left_command": false,
+    "show_edit_to_the_right_command": false,
+    "show_find_in_files_command": false	,
+    "show_create_from_selection_command": false,
+    "show_open_in_explorer_command": false,
+    "terminals": [
+        {
+            "name": "xfce4-terminal",
+            "cmd": ["xfce4-terminal"],
+            "platform": "linux"
+
+        }
+    ],
+    "create_keybinding_enabled": true // we use own key binding    
+}

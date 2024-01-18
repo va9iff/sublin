@@ -1,0 +1,6 @@
+[
+	{
+		"keys": ["alt+j"],
+		"command": "fm_create",
+	}
+]	

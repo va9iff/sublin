@@ -1,4 +1,8 @@
 [
+	{
+		"keys": ["ctrl+e"], "command": "toggle_side_bar"  
+	},
+
 	{ "keys": ["ctrl+shift+c"], "command": "cancel_build" },
 	{ "keys": ["ctrl+w"], "command": "close_file" }, //so ctrl+w won't close window
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
