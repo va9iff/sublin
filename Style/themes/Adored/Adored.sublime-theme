@@ -23,7 +23,7 @@
     	},
 
         // =====================================================================
-        // Sidebar Label
+        // Sidebar Label (text in the sidebar rows)
     	{
     		"class": "sidebar_label",
             "opacity": 0.6,
@@ -47,14 +47,22 @@
         },
 
         // =====================================================================
-        // Sidebar tree
+        // Sidebar Folder Icons
         {
-
+            "class": "icon_folder",
+            "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+            "layer0.tint": "color(var(--background) s(80%) l(70%))",
+            "layer0.opacity": 1,
+        },
+        {
             "class": "icon_folder",
             "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
             "layer0.tint": "color(var(--background) s(30%) l(50%))",
-            "layer0.opacity": 1,            
-        },	
+            "layer0.opacity": 1,
+        },
+
+        // =====================================================================
+        // Tree Rows (rows of label)
     	{
     		"class": "tree_row",
     		"layer0.texture": "sublin/assets/tree-highlight.png",
@@ -95,6 +103,21 @@
           "class": "sidebar_heading",
           "settings": ["hide_header"],
           "color": "transparent", // <= the last 0 is the transparency
+        },
+
+        // =====================================================================
+        // Fodler Arrows
+        {
+          "class": "disclosure_button_control",
+          "settings": ["hide_folder_arrows"],
+          "content_margin": [0,0]
+          // /*or*/"layer0.opacity": 0.0 //if you simply wants to hide them
+        },
+        {
+          "class": "sidebar_tree",
+          "settings": ["hide_folder_arrows"],
+          // "indent": 0
+         "indent_offset": 0 
         },
     ]
 }
