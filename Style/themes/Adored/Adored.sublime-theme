@@ -48,12 +48,12 @@
 
         // =====================================================================
         // Sidebar Folder Icons
-        {
-            "class": "icon_folder",
-            "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-            "layer0.tint": "color(var(--background) s(80%) l(70%))",
-            "layer0.opacity": 1,
-        },
+        // {
+        //     "class": "icon_folder",
+        //     "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        //     "layer0.tint": "color(var(--background) s(80%) l(70%))",
+        //     "layer0.opacity": 1,
+        // },
         {
             "class": "icon_folder",
             "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
