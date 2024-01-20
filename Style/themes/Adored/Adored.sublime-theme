@@ -92,8 +92,9 @@
     	},
 
         // =====================================================================
-        // Hide Sidebar Headings (if { "hide_header": True })
-
+        // Sidebar Settings 
+        
+        // { "hide_header": True }
         {
           "class": "sidebar_container",
           "settings": ["hide_header"],
@@ -104,20 +105,48 @@
           "settings": ["hide_header"],
           "color": "transparent", // <= the last 0 is the transparency
         },
-
-        // =====================================================================
-        // Fodler Arrows
+        // { "merge_sidebar": true }
+        {
+            "class": "sidebar_container",
+            "settings": ["merge_sidebar"],
+            "layer0.tint": "var(--background)"
+        },
+        // { "hide_folder_arrows": true }
         {
           "class": "disclosure_button_control",
           "settings": ["hide_folder_arrows"],
           "content_margin": [0,0]
           // /*or*/"layer0.opacity": 0.0 //if you simply wants to hide them
         },
+
+        // =====================================================================
+        // Autocomplete
         {
-          "class": "sidebar_tree",
-          "settings": ["hide_folder_arrows"],
-          // "indent": 0
-         "indent_offset": 0 
+            "class": "table_row",
+            "layer0.texture": "sublin/assets/tree-highlight.png",
+            // "layer0.tint": "color(var(--accent) s(18%) l(50%) a(0.4))",
+            "layer0.tint": "color(var(--background) s(18%) l(50%) a(0.4))",
+            "layer0.inner_margin": [
+                8,
+                4
+            ],
+            "layer0.opacity": 0,
+            "layer1.texture": "sublin/assets/tree-highlight-border.png",
+            // "layer1.tint": "color(var(--accent) s(18%) l(50%) a(0.4))",
+            "layer1.tint": "color(var(--background) s(18%) l(50%) a(0.4))",
+            "layer1.inner_margin": [
+                8,
+                4
+            ],
+            "layer1.opacity": 0
+        },
+        {
+            "class": "table_row",
+            "attributes": [
+                "selected"
+            ],
+            "layer0.opacity": 1,
+            "layer1.opacity": 1
         },
     ]
 }
